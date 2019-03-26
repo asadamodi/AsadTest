@@ -131,19 +131,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
 }
 
-// To parse the JSON, add this file to your project and do:
-//
-//   let welcome = try? newJSONDecoder().decode(Welcome.self, from: jsonData)
-
-// To parse the JSON, add this file to your project and do:
-//
-//   let welcome = try? newJSONDecoder().decode(Welcome.self, from: jsonData)
-
-
-// To parse the JSON, add this file to your project and do:
-//
-//   let welcome = try? newJSONDecoder().decode(Welcome.self, from: jsonData)
-
 
 struct Welcome: Codable {
     let message, cod: String
@@ -225,50 +212,4 @@ class JSONNull: Codable, Hashable {
         try container.encodeNil()
     }
 }
-
-/*
-struct WeatherData : Codable
-{
-    var message: String?
-    var cod: Int?
-    var count: Int?
-    var list: Bool?
-}
-struct WeatherList: Codable
-{
-    var id: Double?
-    var name: String?
-    var coord : Coordinate?
-    var main : Main?
-    var dt: Double?
-    var wind: Wind?
-    var sys: Sys?
-    var rain: String?
-    var snow: String?
-}
-struct Coordinate: Codable {
-    let lat: Double?
-    let lng: Double?
-}
-struct Main: Codable
-{
-    let temp: Double?
-    let pressure: Double?
-    let temp_min: Double?
-    let temp_max: Double?
-    let sea_level: Double?
-    let grnd_level: Double?
-   
-}
-struct Wind: Codable
-{
-    let speed : Double?
-    let deg: Double?
-    
-}
-struct Sys: Codable
-{
-    var country: String?
-    
-}*/
 
