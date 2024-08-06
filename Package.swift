@@ -6,6 +6,7 @@ import PackageDescription
 
 let package = Package(
     name: "AsadTest",
+    defaultLocalization: "en",
     platforms: [
         .iOS(.v14),
         .macOS(.v10_15)
